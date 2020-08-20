@@ -1,0 +1,24 @@
+crawler:
+  driverPath: "C:\\chromedriver\\chromedriver.exe"
+  defaultUserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
+
+  auction:
+    serviceId: auction
+    mainUrl: "https://www.auction.co.kr"
+    searchUrl: "http://browse.auction.co.kr/search?keyword="
+    loginUrl: "https://signin.auction.co.kr/Authenticate/login.aspx"
+    userId: ""
+    password: ""
+
+  gmarket:
+    serviceId: gmarket
+    mainUrl: "http://www.gmarket.co.kr"
+    searchUrl: ""
+    loginUrl: "https://signinssl.gmarket.co.kr/LogIn/LogInProc"
+    userId: ""
+    password: ""
+
+spring:
+  cache:
+    ehcache:
+      config: classpath:ehcache.xml
